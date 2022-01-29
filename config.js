@@ -1,3 +1,3 @@
 module.exports = {
-  tabserver:"http://localhost"
+  tabserver:"https://tableau.fleetyr.com"
 }
