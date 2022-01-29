@@ -11,8 +11,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());
 
-app.listen(2999,()=>{
- console.log('Basic Tableau Broker Server is running on port 2999') 
+const port = process.env.port || 2999
+app.listen(port,()=>{
+ console.log('Basic Tableau Broker Server is running on the environment primary port or port 2999') 
 });
 
 app.get('/', function(req, res) {
